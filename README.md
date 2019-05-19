@@ -16,6 +16,7 @@ function nb_internationPhoneCssJs() {
     wp_enqueue_style( 'nb-intlTelInput-style', get_stylesheet_directory_uri() . '/nb_intl/css/intlTelInput.min.css' );
 	wp_enqueue_script( 'nb-intlTelInput-script', get_stylesheet_directory_uri() . '/nb_intl/js/intlTelInput.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'nb-intlTelInput-custom-script', get_stylesheet_directory_uri() . '/nb_intl/js/custom_script.js', array( 'jquery' ) );
+	wp_enqueue_script( 'nb-intlTelInput-utils-script', get_stylesheet_directory_uri() . '/nb_intl/js/utils.js', array( 'jquery' ) );
     
 }
 add_action( 'wp_enqueue_scripts', 'nb_internationPhoneCssJs' );
